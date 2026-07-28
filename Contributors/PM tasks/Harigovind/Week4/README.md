@@ -27,10 +27,7 @@ Ridge Regression uses L2 regularization to reduce model complexity by penalizing
 
 The optimization problem is solved using the closed-form solution:
 
-\[
-\beta = (X^TX+\lambda I)^{-1}X^Ty
-\]
-
+β = (XᵀX + λI)⁻¹Xᵀy
 where λ controls the strength of regularization.
 
 As λ increases:
@@ -43,9 +40,7 @@ As λ increases:
 
 Lasso Regression uses L1 regularization:
 
-\[
-\frac{1}{2}||y-X\beta||^2+\lambda||\beta||_1
-\]
+‖y − Xβ‖² + λ‖β‖₁
 
 Unlike Ridge, Lasso can force coefficients to become exactly zero, resulting in feature selection.
 
