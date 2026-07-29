@@ -121,18 +121,41 @@ Run:
 
 ## Results
 
-The generated CSV files can be used to create:
+## Training and Validation Error vs Lambda
 
-- Training vs validation error plots
-- Ridge coefficient path plots
-- Lasso coefficient path plots
+![Training and Validation Error](mse_vs_lambda.png)
 
 
-## Libraries Used
+---
 
-- C++
-- Eigen3
-- chrono (for runtime benchmarking)
+## Ridge Coefficient Paths
+
+![Ridge Coefficient Paths](ridge_coefficient_path.png)
+
+
+---
+
+## Lasso Coefficient Paths
+
+![Lasso Coefficient Paths](lasso_coefficient_path.png)
+
+---
+
+
+# Libraries Used
+
+### C++
+
+- Eigen
+- chrono
+
+### Python
+
+- csv
+- matplotlib
+
+---
+
 
 
 ## Folder Structure
@@ -141,9 +164,13 @@ The generated CSV files can be used to create:
 Week4/
 │
 ├── Ridge_Lasso.cpp
+├── plot_results.py
+├── README.md
+├── Lasso_Coordinate_Descent.md
 ├── errors.csv
 ├── ridge_coefficients.csv
 ├── lasso_coefficients.csv
-├── README.md
-└── Lasso_Coordinate_Descent.md
+├── mse_vs_lambda.png
+├── ridge_coefficient_path.png
+└── lasso_coefficient_path.png
 ```
